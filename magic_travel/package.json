@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "nuxt": "^3.8.1",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.1.0",
+    "@popperjs/core": "^2.11.8",
+    "@vueform/slider": "^2.1.9",
+    "aos": "^2.3.4",
+    "chart.js": "^4.4.0",
+    "sass": "^1.69.5",
+    "swiper": "^11.0.4",
+    "v-calendar": "^3.1.2",
+    "vue-chartjs": "^5.2.0",
+    "vue3-google-map": "^0.18.0"
+  }
+}
