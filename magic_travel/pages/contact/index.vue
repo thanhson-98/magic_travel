@@ -4,7 +4,7 @@
     <Map />
     <Locations />
     <ContactForm />
-    <FooterOne />
+    <Footer />
   </main>
 </template>
 
@@ -13,7 +13,7 @@ useSeoMeta({
   title: "Liên hệ || Magic Travel",
   description: "Magic Travel - Travel & Tour",
 });
-import FooterOne from "@/components/layout/footers/FooterOne";
+import Footer from "@/components/layout/footers/FooterFive";
 import Header from "~/components/layout/header/Header";
 import ContactForm from "@/components/pages/contact/ContactForm";
 import Locations from "@/components/pages/contact/Locations";
