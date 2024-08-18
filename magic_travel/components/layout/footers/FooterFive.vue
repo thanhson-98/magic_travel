@@ -12,7 +12,7 @@
 
                 <div class="col-auto">
                   <div class="text-20 fw-500">
-                    Speak to our expert at
+                    Số điện thoại liên hệ:
                     <span class="text-accent-1">1-800-453-6744</span>
                   </div>
                 </div>
@@ -21,7 +21,7 @@
 
             <div class="col-auto">
               <div class="footerSocials">
-                <div class="footerSocials__title">Follow Us</div>
+                <div class="footerSocials__title">Theo dõi chúng tôi</div>
 
                 <div class="footerSocials__icons">
                   <Socials />
@@ -34,29 +34,27 @@
         <div class="footer__content">
           <div class="row y-gap-40 justify-between">
             <div class="col-lg-4 col-md-6">
-              <h4 class="text-20 fw-500">Contact</h4>
+              <h4 class="text-20 fw-500">Magic Travel</h4>
 
               <div class="y-gap-10 mt-20">
-                <a class="d-block" href="#">
-                  328 Queensberry Street, North Melbourne VIC3051, Australia.
-                </a>
-                <a class="d-block" href="#"> hi@viatours.com </a>
+                <p class="d-block" href="#">
+                  190 Pasteur, Phường Võ Thị Sáu, Quận 3, TP.HCM
+                </p>
+                <p class="d-block" href="#"> 
+                  (+84 28) 3822 8898 </p>
+                <p class="d-block" href="#"> (+84 28) 3829 9142 </p>
+                <p class="d-block" href="#"> magictravel@gmail.com </p>
               </div>
             </div>
 
             <FooterLinks />
 
             <div class="col-lg-3 col-md-6">
-              <h4 class="text-20 fw-500">Newsletter</h4>
-              <p class="mt-20">
-                Subscribe to the free newsletter and stay up to date
-              </p>
 
-              <div class="footer__newsletter">
-                <input type="Email" placeholder="Your email address" />
-                <button>Send</button>
-              </div>
-
+              <h4 class="text-20 fw-500">Bản đồ</h4>
+              <div class="map relative mt-30">
+                      <Map />
+                    </div>
               <h4 class="text-20 fw-500 mt-30">Mobile Apps</h4>
 
               <div class="mt-10">
@@ -80,7 +78,7 @@
       <div class="footer__bottom">
         <div class="row y-gap-5 justify-between items-center">
           <div class="col-auto">
-            <div>© Copyright Viatours {{ new Date().getFullYear() }}</div>
+            <div>© Copyright Magic Travel {{ new Date().getFullYear() }}</div>
           </div>
 
           <div class="col-auto">
@@ -95,6 +93,7 @@
 </template>
 
 <script setup>
+import Map from "~/components/tours/Map.vue";
 import Socials from "../components/Socials";
 import FooterLinks from "../components/FooterLinks";
 import Paymentcards from "../components/Paymentcards";

@@ -2,26 +2,26 @@ export const features = [
   {
     id: 1,
     iconSrc: "/img/icons/1/ticket.svg",
-    title: "Ultimate flexibility",
-    text: "You're in control, with free cancellation and payment options to satisfy any plan or budget.",
+    title: "Mức giá cạnh tranh​",
+    text: "Chúng tôi luôn có những sản phẩm, combo giá trị cạnh tranh với thị trường.",
   },
   {
     id: 2,
     iconSrc: "/img/icons/1/hot-air-balloon.svg",
-    title: "Memorable experiences",
-    text: "Browse and book tours and activities so incredible, you'll want to tell your friends.",
+    title: "Trải nghiệm khó quên",
+    text: "Đều là những trải nghiệm thực tế, hướng dẫn chi tiết cho chuyến đi trong mỗi bài viết.",
   },
   {
     id: 3,
     iconSrc: "/img/icons/1/diamond.svg",
-    title: "Quality at our core",
-    text: "High-quality standards. Millions of reviews. A tourz company.",
+    title: "Book tour nhanh chóng​",
+    text: "Chúng tôi sẽ phản hồi và liên lạc với bạn ngay sau khi bạn đăng ký nhận thông tin.",
   },
   {
     id: 4,
     iconSrc: "/img/icons/1/medal.svg",
-    title: "Award-winning support",
-    text: "New price? New plan? No problem. We're here to help, 24/7.",
+    title: "Chính sách rõ ràng",
+    text: "Luôn đặt khách hàng lên hàng đầu. Các chính sách được áp dụng rõ ràng.",
   },
 ];
 export const featuresFour = [
