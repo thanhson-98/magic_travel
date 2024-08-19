@@ -1,8 +1,7 @@
 <template>
   <main>
-    <Header1 />
+    <Header />
     <PageHeader />
-
     <SingleOne :tour="tour" />
     <TourSlider />
     <FooterOne />
@@ -11,13 +10,13 @@
 
 <script setup>
 useSeoMeta({
-  title: "Tour-single-1 || ViaTour - Travel & Tour Nuxtjs Template",
-  description: "ViaTour - Travel & Tour Nuxtjs Template",
+  title: "Chi tiết Tour",
+  description: "Magic Travel",
 });
 import FooterOne from "@/components/layout/footers/FooterOne";
-import Header1 from "@/components/layout/header/Header1";
+import Header from "@/components/layout/header/Header";
 import PageHeader from "@/components/tourSingle/PageHeader";
-import TourSlider from "@/components/tourSingle/TourSlider";
+import TourSlider from "@/components/tourSingle/TourSlider.vue";
 import SingleOne from "@/components/tourSingle/pages/SingleOne";
 import { allTour } from "@/data/tours";
 const route = useRoute();

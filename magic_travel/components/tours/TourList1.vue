@@ -12,8 +12,8 @@
               <div class="dropdown -type-2 js-dropdown js-form-dd" :class="{ 'is-active': ddActives }"
                 data-main-value="">
                 <div class="dropdown__button js-button" @click="() => {
-                    ddActives = !ddActives;
-                  }
+                  ddActives = !ddActives;
+                }
                   ">
                   <span>Sắp xếp: </span>
                   <span class="js-title">
@@ -24,9 +24,9 @@
 
                 <div class="dropdown__menu js-menu-items">
                   <div v-for="(elm, i) in sortTypes" :key="i" class="dropdown__item" @click="() => {
-                      sortOption = sortOption === elm ? '' : elm;
-                      ddActives = false;
-                    }
+                    sortOption = sortOption === elm ? '' : elm;
+                    ddActives = false;
+                  }
                     " data-value="low">
                     {{ elm }}
                   </div>
@@ -120,24 +120,83 @@
           </div>
 
           <div class="d-flex justify-center flex-column mt-60">
-            <Pagination />
+            <PagePagination />
 
             <div class="text-14 text-center mt-20">
               Hiển thị kết quả 1-15 trên tổng 99
             </div>
           </div>
         </div>
+
       </div>
+      <div class="row mt-30" data-aos="fade-up" data-aos-delay="">
+        <h2 class="text-30">Bài viết liên quan</h2>
+        <div class="pt-40 sm:pt-20">
+        <div class="overflow-hidden pb-5 js-section-slider">
+          <div class="swiper-wrapper">
+            <Swiper space-between="30" class="w-100" :pagination="{ el: '.pbutton1', clickable: true }" :navigation="{
+              prevEl: '.js-slider10-prev',
+              nextEl: '.js-slider10-next',
+            }" :modules="[Navigation, Pagination]" :breakpoints="{
+                500: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1200: { slidesPerView: 3}
+              }">
+              <SwiperSlide v-for="(elm, i) in blogs" :key="i">
+                <nuxt-link :to="`/blog-single/${elm.id}`" class="blogCard -type-1">
+            <div class="blogCard__image ratio ratio-41:30">
+              <nuxt-img width="616" height="451" :src="elm.image" alt="image" class="img-ratio rounded-12" />
+
+              <div v-if="elm.badge" class="blogCard__badge">
+                {{ elm.badge }}
+              </div>
+            </div>
+
+            <div class="blogCard__content mt-30">
+              <div class="blogCard__info text-14">
+                <div class="lh-13">{{ elm.date }}</div>
+                <div class="blogCard__line"></div>
+                <div class="lh-13">By {{ elm.author }}</div>
+              </div>
+
+              <h3 class="blogCard__title text-18 fw-500 mt-10">
+                {{ elm.title }}
+              </h3>
+            </div>
+          </nuxt-link>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+
+        <div class="navAbsolute">
+          <button class="navAbsolute__button bg-white js-slider10-prev">
+            <i class="icon-arrow-left text-14"></i>
+          </button>
+
+          <button class="navAbsolute__button bg-white js-slider10-next">
+            <i class="icon-arrow-right text-14"></i>
+          </button>
+        </div>
+      </div>
+      </div>
+     
     </div>
+
   </section>
 </template>
 
 <script setup>
 
-import Pagination from "~/components/common/Pagination.vue"; // Adjust the path based on your project structure
+import PagePagination from "~/components/common/Pagination.vue"; // Adjust the path based on your project structure
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import { sortTypes } from "@/data/tourFilteringOptions";
 import { comboData } from "@/data/tours";
+import { blogs } from "@/data/blogs";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination } from "swiper/modules";
+
 
 const sortOption = ref("");
 const ddActives = ref(false);
