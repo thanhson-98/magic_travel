@@ -429,3 +429,102 @@ export const allTour = [
   ...tourDataTwo,
   ...tourDataThree,
 ]
+
+export const comboData = [
+  {
+    id: 1,
+    imageSrc: "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=800",
+    location: "Paris, France",
+    title: "Centipede Tour - Guided Arizona Desert Tour",
+    ratingCount: 243,
+    rating: 4.8,
+    duration: "4 days",
+    max_persons: "4",
+    start_location: "Ha Noi",
+    price: 4500000, // Approx. 4,500,000 VND
+    speed: 'Steady',
+    feature: 'Adventure',
+    combo: true,
+    vehicle: "Ô tô"
+  },
+  {
+    id: 2,
+    imageSrc: "https://images.pexels.com/photos/438381/pexels-photo-438381.jpeg?auto=compress&cs=tinysrgb&w=800",
+    location: "Rome, Italy",
+    title: "Historic Rome City Tour",
+    ratingCount: 178,
+    rating: 4.7,
+    duration: "3 days",
+    max_persons: "6",
+    start_location: "Rome",
+    price: 5000000, // Approx. 5,000,000 VND
+    speed: 'Leisurely',
+    feature: 'Cultural',
+    combo: true,
+    vehicle: "Xe máy"
+  },
+  {
+    id: 3,
+    imageSrc: "https://images.pexels.com/photos/213078/pexels-photo-213078.jpeg?auto=compress&cs=tinysrgb&w=800",
+    location: "Kyoto, Japan",
+    title: "Kyoto Temples and Gardens Tour",
+    ratingCount: 321,
+    rating: 4.9,
+    duration: "5 days",
+    max_persons: "10",
+    start_location: "Kyoto",
+    price: 7000000, // Approx. 7,000,000 VND
+    speed: 'Relaxed',
+    feature: 'Cultural',
+    combo: true,
+    vehicle: "Ô tô"
+  },
+  {
+    id: 4,
+    imageSrc: "https://images.pexels.com/photos/460376/pexels-photo-460376.jpeg?auto=compress&cs=tinysrgb&w=800",
+    location: "Cairo, Egypt",
+    title: "Pyramids of Giza and Sphinx Tour",
+    ratingCount: 289,
+    rating: 4.8,
+    duration: "3 days",
+    max_persons: "8",
+    start_location: "Cairo",
+    price: 6000000, // Approx. 6,000,000 VND
+    speed: 'Moderate',
+    feature: 'Historical',
+    combo: true,
+    vehicle: "Xe máy"
+  },
+  {
+    id: 5,
+    imageSrc: "https://media.travel.com.vn/destination/dg_240726_Hmong%20ethnic%20minority%20women%20walking%20on%20rice%20terraces-2%20(1).jpg",
+    location: "New York, USA",
+    title: "New York City Highlights Tour",
+    ratingCount: 512,
+    rating: 4.9,
+    duration: "2 days",
+    max_persons: "12",
+    start_location: "New York",
+    price: 3500000, // Approx. 3,500,000 VND
+    speed: 'Fast-paced',
+    feature: 'Urban',
+    combo: true,
+    vehicle: "Ô tô"
+  },
+  {
+    id: 6,
+    imageSrc: "https://images.pexels.com/photos/219330/pexels-photo-219330.jpeg?auto=compress&cs=tinysrgb&w=800",
+    location: "Sydney, Australia",
+    title: "Sydney Opera House and Harbor Tour",
+    ratingCount: 390,
+    rating: 4.8,
+    duration: "3 days",
+    max_persons: "10",
+    start_location: "Sydney",
+    price: 5500000, // Approx. 5,500,000 VND
+    speed: 'Relaxed',
+    feature: 'Scenic',
+    combo: true,
+    vehicle: "Xe máy"
+  }
+];

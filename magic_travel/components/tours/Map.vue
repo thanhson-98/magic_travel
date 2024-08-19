@@ -4,7 +4,7 @@
     api-key="AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"
     style="width: 100%; height: 100%"
     :center="center"
-    :zoom="4"
+    :zoom="12"
   >
     <MarkerCluster>
       <Marker
@@ -94,7 +94,10 @@ import { GoogleMap, Marker, InfoWindow, MarkerCluster } from "vue3-google-map";
 import { tourDataThree } from "~/data/tours";
 import Stars from "../common/Stars.vue";
 
-const center = { lat: 27.411201277163975, lng: -96.12394824867293 };
+const center = {   
+  lat: 21.028511,
+  lng: 105.804817,
+};
 const option = {
   zoomControl: true,
   disableDefaultUI: true,

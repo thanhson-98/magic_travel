@@ -3,18 +3,18 @@
     <div class="container">
       <div class="row justify-center">
         <div class="col-lg-8">
-          <h2 class="text-30 fw-700 text-center mb-30">Leave us your info</h2>
+          <h2 class="text-30 fw-700 text-center mb-30">Hãy để lại thông tin của bạn</h2>
 
           <div class="contactForm">
             <form @submit.prevent="submitForm" class="row y-gap-30">
               <div class="col-md-6">
-                <input v-model="name" type="text" placeholder="Name" required />
+                <input v-model="name" type="text" placeholder="Họ tên của bạn" required />
               </div>
               <div class="col-md-6">
                 <input
                   v-model="phone"
                   type="text"
-                  placeholder="Phone"
+                  placeholder="Số điện thoại"
                   required
                 />
               </div>
@@ -29,7 +29,7 @@
               <div class="col-12">
                 <textarea
                   v-model="message"
-                  placeholder="Message"
+                  placeholder="Thông tin bạn muốn tham khảo?"
                   rows="6"
                   required
                 ></textarea>
@@ -39,7 +39,7 @@
                   type="submit"
                   class="button -md -dark-1 bg-accent-1 text-white col-12"
                 >
-                  Send Message
+                  Gửi
                 </button>
               </div>
             </form>

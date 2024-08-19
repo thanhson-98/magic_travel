@@ -1,10 +1,10 @@
 <template>
-  <section class="layout-pt-xl">
+  <section class="layout-pt-xl mb-20">
     <div class="container">
       <div class="row justify-center text-center">
         <div class="col-auto">
-          <h2 data-aos="fade-left" data-aos-delay="" class="text-30">
-            Why choose Tourz
+          <h2 data-aos="fade-up" data-aos-delay="" class="text-30">
+            Tại sao nên chọn Magic Travel?
           </h2>
         </div>
       </div>

@@ -309,34 +309,49 @@ export const destinationsSix = [
 export const destinationsSeven = [
   {
     id: 1,
-    title: "Cruises",
-    imgSrc: "/img/features/2/1.jpg",
+    title: "Quảng Ninh",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Indochine%20Premium%20r.jpg",
   },
   {
     id: 2,
-    title: "Beach Tours",
-    imgSrc: "/img/features/2/2.jpg",
+    title: "Hà Giang",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Lung%20Cu%20Flagpole_1.jpg",
   },
   {
     id: 3,
-    title: "City Tours",
-    imgSrc: "/img/features/2/3.jpg",
+    title: "Lào Cai",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_DINH%20FANSIPAN.jpg",
   },
   {
     id: 4,
-    title: "Museum Tour",
-    imgSrc: "/img/features/2/4.jpg",
+    title: "Ninh Bình",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Trang%20An.jpg",
   },
   {
     id: 5,
-    title: "Food",
-    imgSrc: "/img/features/2/5.jpg",
+    title: "Yên Bái",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Hmong%20ethnic%20minority%20women%20walking%20on%20rice%20terraces-2%20(1).jpg",
   },
   {
     id: 6,
-    title: "Hiking",
-    imgSrc: "/img/features/2/6.jpg",
+    title: "Sơn La",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Ethnic%20minority%20children%20playing%20on%20the%20green%20tea%20hill.jpg",
   },
+  {
+    id: 7,
+    title: "Cao Bằng",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_CAO%20BANG%20OVER%20VIEW%20(7).jpg",
+  },
+  {
+    id: 8,
+    title: "Hải Phòng",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_CAT%20BA%20(1).jpg",
+  },
+  {
+    id: 9,
+    title: "Hà Nội",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Guom%20Lake%20or%20Ho%20Guom,%20Ha%20Noi,.jpg",
+  }
 ];
 
 export const destinationsEight = [
@@ -679,4 +694,134 @@ export const destinations13 = [
     imgSrc: "/img/destinationCards/1/8.png",
     tours: 900,
   },
+];
+
+export const  tabs = ["Miền Bắc", "Miền Trung", "Miền Đông Nam Bộ"];
+export const tabContent  = [
+[
+  {
+    id: 1,
+    title: "Quảng Ninh",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Indochine%20Premium%20r.jpg",
+  },
+  {
+    id: 2,
+    title: "Hà Giang",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Lung%20Cu%20Flagpole_1.jpg",
+  },
+  {
+    id: 3,
+    title: "Lào Cai",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_DINH%20FANSIPAN.jpg",
+  },
+  {
+    id: 4,
+    title: "Ninh Bình",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Trang%20An.jpg",
+  },
+  {
+    id: 5,
+    title: "Yên Bái",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Hmong%20ethnic%20minority%20women%20walking%20on%20rice%20terraces-2%20(1).jpg",
+  },
+  {
+    id: 6,
+    title: "Sơn La",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Ethnic%20minority%20children%20playing%20on%20the%20green%20tea%20hill.jpg",
+  },
+  {
+    id: 7,
+    title: "Cao Bằng",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_CAO%20BANG%20OVER%20VIEW%20(7).jpg",
+  },
+  {
+    id: 8,
+    title: "Hải Phòng",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_CAT%20BA%20(1).jpg",
+  },
+  {
+    id: 9,
+    title: "Hà Nội",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Guom%20Lake%20or%20Ho%20Guom,%20Ha%20Noi,.jpg",
+  }
+],
+[
+  {
+    id: 1,
+    title: "Quảng Ninh",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Indochine%20Premium%20r.jpg",
+  },
+  {
+    id: 2,
+    title: "Hà Giang",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Lung%20Cu%20Flagpole_1.jpg",
+  },
+  {
+    id: 3,
+    title: "Lào Cai",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_DINH%20FANSIPAN.jpg",
+  },
+  {
+    id: 4,
+    title: "Ninh Bình",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Trang%20An.jpg",
+  },
+  {
+    id: 5,
+    title: "Yên Bái",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Hmong%20ethnic%20minority%20women%20walking%20on%20rice%20terraces-2%20(1).jpg",
+  },
+  {
+    id: 6,
+    title: "Sơn La",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Ethnic%20minority%20children%20playing%20on%20the%20green%20tea%20hill.jpg",
+  }
+],
+[
+  {
+    id: 1,
+    title: "Quảng Ninh",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Indochine%20Premium%20r.jpg",
+  },
+  {
+    id: 2,
+    title: "Hà Giang",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Lung%20Cu%20Flagpole_1.jpg",
+  },
+  {
+    id: 3,
+    title: "Lào Cai",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_DINH%20FANSIPAN.jpg",
+  },
+  {
+    id: 4,
+    title: "Ninh Bình",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Trang%20An.jpg",
+  },
+  {
+    id: 5,
+    title: "Yên Bái",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Hmong%20ethnic%20minority%20women%20walking%20on%20rice%20terraces-2%20(1).jpg",
+  },
+  {
+    id: 6,
+    title: "Sơn La",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Ethnic%20minority%20children%20playing%20on%20the%20green%20tea%20hill.jpg",
+  },
+  {
+    id: 7,
+    title: "Cao Bằng",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_CAO%20BANG%20OVER%20VIEW%20(7).jpg",
+  },
+  {
+    id: 8,
+    title: "Hải Phòng",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_CAT%20BA%20(1).jpg",
+  },
+  {
+    id: 9,
+    title: "Hà Nội",
+    imgSrc: "https://media.travel.com.vn/destination/dg_240726_Guom%20Lake%20or%20Ho%20Guom,%20Ha%20Noi,.jpg",
+  }
+]
 ];

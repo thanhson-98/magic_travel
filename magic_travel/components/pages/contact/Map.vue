@@ -5,7 +5,7 @@
       api-key="AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM"
       style="width: 100%; height: 100%; overflow-x: hidden; position: relative"
       :center="center"
-      :zoom="4"
+      :zoom="15"
     />
 
     <div class="map__shape">
@@ -61,8 +61,8 @@
 import { GoogleMap } from "vue3-google-map";
 
 const center = {
-  lat: -3.745,
-  lng: -38.523,
+  lat: 21.028511,
+  lng: 105.804817,
 };
 const option = {
   zoomControl: true,
