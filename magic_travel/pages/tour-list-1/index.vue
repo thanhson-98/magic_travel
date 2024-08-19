@@ -1,19 +1,19 @@
 <template>
   <main>
-    <Header1 />
+    <Header />
     <PageHeader />
     <TourList1 />
-    <FooterOne />
+    <Footer />
   </main>
 </template>
 
 <script setup>
 useSeoMeta({
-  title: "Tour-list-1 || ViaTour - Travel & Tour Nuxtjs Template",
-  description: "ViaTour - Travel & Tour Nuxtjs Template",
+  title: "Danh mục || Magic Travel",
+  description: "Magic Travel - Travel & Tour",
 });
-import FooterOne from "@/components/layout/footers/FooterOne";
-import Header1 from "@/components/layout/header/Header1";
-import PageHeader from "@/components/tours/PageHeader";
-import TourList1 from "@/components/tours/TourList1";
+import Footer from "@/components/layout/footers/FooterFive";
+import Header from "@/components/layout/header/Header";
+import PageHeader from "@/components/tours/PageHeader.vue";
+import TourList1 from "@/components/tours/TourList1.vue";
 </script>

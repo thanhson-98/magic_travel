@@ -12,7 +12,7 @@
 
                 <div class="col-auto">
                   <div class="text-20 fw-500">
-                    Số điện thoại liên hệ:
+                    Hotline:
                     <span class="text-accent-1">1-800-453-6744</span>
                   </div>
                 </div>

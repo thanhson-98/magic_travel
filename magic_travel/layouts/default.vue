@@ -1,11 +1,13 @@
 <template>
        <slot />
        <ScrollToTop/>
+       <FloatingButtons/>
   </template>
   <script setup >
 
   import AOS from 'aos';
 import ScrollToTop from '~/components/common/ScrollToTop.vue';
+import FloatingButtons from '~/components/common/FloatingButtons.vue'
   // import 'aos/dist/aos.css'; // Import the AOS CSS
   
   onMounted(() => {

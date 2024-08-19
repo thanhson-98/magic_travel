@@ -78,5 +78,4 @@
 
 <script setup>
 import { comboData } from "@/data/tours";
-import Stars from "@/components/common/Stars";
 </script>

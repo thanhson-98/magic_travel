@@ -17,12 +17,6 @@
             </span>
           </div>
         </div>
-
-        <div class="col-auto">
-          <div class="pageHeader__subtitle">
-            THE 10 BEST Phuket Tours & Excursions
-          </div>
-        </div>
       </div>
 
       <div class="row pt-30">
