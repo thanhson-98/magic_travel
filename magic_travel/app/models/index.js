@@ -1,3 +1,4 @@
 import Base, { getAccessInfo } from './Base';
+import Post from './Post';
 
-export { Base, getAccessInfo };
+export { Base, getAccessInfo, Post };
