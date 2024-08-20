@@ -28,3 +28,5 @@ export const features = [
 ];
 
 export const speedFeatures = ["Fast", "Steady", "Speedy", "Furious", "Grind"];
+
+export const sortTypes = ["Giá từ thấp đến cao", "Giá từ cao đến thấp", "Tất cả"];

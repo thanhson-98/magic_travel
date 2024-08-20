@@ -438,7 +438,7 @@ export const comboData = [
     title: "Centipede Tour - Guided Arizona Desert Tour",
     ratingCount: 243,
     rating: 4.8,
-    duration: "4 days",
+    duration: "4 ngày",
     max_persons: "4",
     start_location: "Ha Noi",
     price: 4500000, // Approx. 4,500,000 VND
@@ -454,7 +454,7 @@ export const comboData = [
     title: "Historic Rome City Tour",
     ratingCount: 178,
     rating: 4.7,
-    duration: "3 days",
+    duration: "3 ngày",
     max_persons: "6",
     start_location: "Rome",
     price: 5000000, // Approx. 5,000,000 VND
@@ -470,7 +470,7 @@ export const comboData = [
     title: "Kyoto Temples and Gardens Tour",
     ratingCount: 321,
     rating: 4.9,
-    duration: "5 days",
+    duration: "5 ngày",
     max_persons: "10",
     start_location: "Kyoto",
     price: 7000000, // Approx. 7,000,000 VND
@@ -486,7 +486,7 @@ export const comboData = [
     title: "Pyramids of Giza and Sphinx Tour",
     ratingCount: 289,
     rating: 4.8,
-    duration: "3 days",
+    duration: "3 ngày",
     max_persons: "8",
     start_location: "Cairo",
     price: 6000000, // Approx. 6,000,000 VND
@@ -502,7 +502,7 @@ export const comboData = [
     title: "New York City Highlights Tour",
     ratingCount: 512,
     rating: 4.9,
-    duration: "2 days",
+    duration: "2 ngày",
     max_persons: "12",
     start_location: "New York",
     price: 3500000, // Approx. 3,500,000 VND
@@ -518,7 +518,7 @@ export const comboData = [
     title: "Sydney Opera House and Harbor Tour",
     ratingCount: 390,
     rating: 4.8,
-    duration: "3 days",
+    duration: "3 ngày",
     max_persons: "10",
     start_location: "Sydney",
     price: 5500000, // Approx. 5,500,000 VND
