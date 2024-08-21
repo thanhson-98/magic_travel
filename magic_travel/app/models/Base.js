@@ -41,16 +41,16 @@ const calculateExpiresInDays = (expiresAt) => {
 
 export const setToken = (access) => {
 	if (access) {
-		Cookie.set('access', JSON.stringify(access), {
-			expires: calculateExpiresInDays(access.expires_in),
+		Cookie.set('access', JSON.stringify(access.data), {
+			expires: calculateExpiresInDays(access.data.expires_in),
 			sameSite: 'Lax',
 		});
-		Cookie.set('refresh_token', access.refresh_token || refreshToken, {
-			expires: 30,
+		Cookie.set('refresh_token', access.data.refresh_token || refreshToken, {
+			expires: calculateExpiresInDays(access.data.expires_in),
 			sameSite: 'Lax',
 		});
 		accessInfo = access;
-		refreshToken = access.refresh_token || refreshToken;
+		refreshToken = access.data.refresh_token || refreshToken;
 	} else {
 		Cookie.remove('access');
 		Cookie.remove('refresh_token');
@@ -93,12 +93,7 @@ export const getNewToken = async (err) => {
 		if (!refreshToken) {
 			throw new Error('no-token');
 		}
-		const res = await superagent
-			.post(`${API_ROOT}/api/refresh`, {
-				refresh_token: refreshToken,
-			})
-			.then(responseBody);
-
+		const res = await superagent.get(`${API_ROOT}/api/admin/refresh-token`).use(tokenPlugin).then(responseBody);
 		setToken({
 			...res,
 		});
@@ -106,6 +101,18 @@ export const getNewToken = async (err) => {
 	} catch (error) {
 		clearToken();
 		return false;
+	}
+};
+
+export const logout = async () => {
+	try {
+		return await superagent.post(`${API_ROOT}/api/logout`).use(tokenPlugin).catch(catchError);
+	} catch (error) {
+		if (process.env.NODE_ENV === 'development') {
+			console.error(e);
+		}
+	} finally {
+		clearToken();
 	}
 };
 

@@ -13,19 +13,19 @@ export const sidebarItems = [
 	},
 	{
 		id: 3,
-		href: '/db-product',
+		href: '/admin/product',
 		iconClass: 'icon-calendar text-26',
 		label: 'Quản lý sản phẩm',
 	},
 	{
 		id: 4,
-		href: '/db-category',
+		href: '/admin/category',
 		iconClass: 'icon-calendar text-26',
 		label: 'Quản lý danh mục',
 	},
 	{
 		id: 5,
-		href: '/db-customer',
+		href: '/admin/customer',
 		iconClass: 'icon-calendar text-26',
 		label: 'Quản lý khách hàng',
 	},

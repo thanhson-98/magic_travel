@@ -3,14 +3,14 @@ import { cloneDeep } from 'opLodash';
 
 const initState = {
 	users: {},
+	isLoading: false,
 };
 
 export const useBaseStore = defineStore('base', () => {
-	const isLoading = ref(false);
 	const state = reactive(cloneDeep(initState));
 
 	const setIsLoading = (value) => {
-		isLoading.value = value;
+		state.isLoading = value;
 	};
 
 	const setUsers = (payload) => {
@@ -21,7 +21,6 @@ export const useBaseStore = defineStore('base', () => {
 	};
 
 	return {
-		isLoading,
 		state,
 		setIsLoading,
 		resetUsers,

@@ -14,6 +14,8 @@ export default defineNuxtConfig({
 		'@assets': resolve(__dirname, 'assets'),
 		'@data': resolve(__dirname, 'data'),
 		'@app': resolve(__dirname, 'app'),
+        '@stores': resolve(__dirname, 'stores'),
+        '@public': resolve(__dirname, 'public'),
 		opLodash: resolve(__dirname, 'opLodash.js'),
 	},
 	imports: {
